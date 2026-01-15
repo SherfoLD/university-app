@@ -5,10 +5,9 @@ bootstrap:
   runPubGetInParallel: false
 packages:
   - packages/*
-  - packages/dynamite/**
-  - packages/neon/**
-  - packages/neon/**/packages/**
-  - packages/neon/**/packages/*/neon_framework/packages/**
+  - packages/auth_client/*
+  - packages/notifications_client/*
+  - packages/storage/*
   - api/**
 ide:
   intellij:

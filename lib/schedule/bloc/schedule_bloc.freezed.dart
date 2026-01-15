@@ -36,12 +36,14 @@ mixin _$FieldDiff {
   /// Create a copy of FieldDiff
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $FieldDiffCopyWith<FieldDiff> get copyWith => throw _privateConstructorUsedError;
+  $FieldDiffCopyWith<FieldDiff> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $FieldDiffCopyWith<$Res> {
-  factory $FieldDiffCopyWith(FieldDiff value, $Res Function(FieldDiff) then) = _$FieldDiffCopyWithImpl<$Res, FieldDiff>;
+  factory $FieldDiffCopyWith(FieldDiff value, $Res Function(FieldDiff) then) =
+      _$FieldDiffCopyWithImpl<$Res, FieldDiff>;
   @useResult
   $Res call({
     String fieldName,
@@ -54,7 +56,8 @@ abstract class $FieldDiffCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FieldDiffCopyWithImpl<$Res, $Val extends FieldDiff> implements $FieldDiffCopyWith<$Res> {
+class _$FieldDiffCopyWithImpl<$Res, $Val extends FieldDiff>
+    implements $FieldDiffCopyWith<$Res> {
   _$FieldDiffCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -113,9 +116,12 @@ class _$FieldDiffCopyWithImpl<$Res, $Val extends FieldDiff> implements $FieldDif
 }
 
 /// @nodoc
-abstract class _$$FieldDiffImplCopyWith<$Res> implements $FieldDiffCopyWith<$Res> {
-  factory _$$FieldDiffImplCopyWith(_$FieldDiffImpl value, $Res Function(_$FieldDiffImpl) then) =
-      __$$FieldDiffImplCopyWithImpl<$Res>;
+abstract class _$$FieldDiffImplCopyWith<$Res>
+    implements $FieldDiffCopyWith<$Res> {
+  factory _$$FieldDiffImplCopyWith(
+    _$FieldDiffImpl value,
+    $Res Function(_$FieldDiffImpl) then,
+  ) = __$$FieldDiffImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({
@@ -129,9 +135,13 @@ abstract class _$$FieldDiffImplCopyWith<$Res> implements $FieldDiffCopyWith<$Res
 }
 
 /// @nodoc
-class __$$FieldDiffImplCopyWithImpl<$Res> extends _$FieldDiffCopyWithImpl<$Res, _$FieldDiffImpl>
+class __$$FieldDiffImplCopyWithImpl<$Res>
+    extends _$FieldDiffCopyWithImpl<$Res, _$FieldDiffImpl>
     implements _$$FieldDiffImplCopyWith<$Res> {
-  __$$FieldDiffImplCopyWithImpl(_$FieldDiffImpl _value, $Res Function(_$FieldDiffImpl) _then) : super(_value, _then);
+  __$$FieldDiffImplCopyWithImpl(
+    _$FieldDiffImpl _value,
+    $Res Function(_$FieldDiffImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of FieldDiff
   /// with the given fields replaced by the non-null parameter values.
@@ -268,12 +278,24 @@ class _$FieldDiffImpl with DiagnosticableTreeMixin implements _FieldDiff {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$FieldDiffImpl &&
-            (identical(other.fieldName, fieldName) || other.fieldName == fieldName) &&
-            (identical(other.oldValue, oldValue) || other.oldValue == oldValue) &&
-            (identical(other.newValue, newValue) || other.newValue == newValue) &&
-            const DeepCollectionEquality().equals(other._addedDates, _addedDates) &&
-            const DeepCollectionEquality().equals(other._removedDates, _removedDates) &&
-            const DeepCollectionEquality().equals(other._unchangedDates, _unchangedDates));
+            (identical(other.fieldName, fieldName) ||
+                other.fieldName == fieldName) &&
+            (identical(other.oldValue, oldValue) ||
+                other.oldValue == oldValue) &&
+            (identical(other.newValue, newValue) ||
+                other.newValue == newValue) &&
+            const DeepCollectionEquality().equals(
+              other._addedDates,
+              _addedDates,
+            ) &&
+            const DeepCollectionEquality().equals(
+              other._removedDates,
+              _removedDates,
+            ) &&
+            const DeepCollectionEquality().equals(
+              other._unchangedDates,
+              _unchangedDates,
+            ));
   }
 
   @override
@@ -332,7 +354,8 @@ abstract class _FieldDiff implements FieldDiff {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$FieldDiffImplCopyWith<_$FieldDiffImpl> get copyWith => throw _privateConstructorUsedError;
+  _$$FieldDiffImplCopyWith<_$FieldDiffImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -350,19 +373,23 @@ mixin _$ScheduleChange {
   /// Create a copy of ScheduleChange
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $ScheduleChangeCopyWith<ScheduleChange> get copyWith => throw _privateConstructorUsedError;
+  $ScheduleChangeCopyWith<ScheduleChange> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ScheduleChangeCopyWith<$Res> {
-  factory $ScheduleChangeCopyWith(ScheduleChange value, $Res Function(ScheduleChange) then) =
-      _$ScheduleChangeCopyWithImpl<$Res, ScheduleChange>;
+  factory $ScheduleChangeCopyWith(
+    ScheduleChange value,
+    $Res Function(ScheduleChange) then,
+  ) = _$ScheduleChangeCopyWithImpl<$Res, ScheduleChange>;
   @useResult
   $Res call({ChangeType type, String subject, List<FieldDiff> fieldDiffs});
 }
 
 /// @nodoc
-class _$ScheduleChangeCopyWithImpl<$Res, $Val extends ScheduleChange> implements $ScheduleChangeCopyWith<$Res> {
+class _$ScheduleChangeCopyWithImpl<$Res, $Val extends ScheduleChange>
+    implements $ScheduleChangeCopyWith<$Res> {
   _$ScheduleChangeCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -374,7 +401,11 @@ class _$ScheduleChangeCopyWithImpl<$Res, $Val extends ScheduleChange> implements
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? type = null, Object? subject = null, Object? fieldDiffs = null}) {
+  $Res call({
+    Object? type = null,
+    Object? subject = null,
+    Object? fieldDiffs = null,
+  }) {
     return _then(
       _value.copyWith(
             type:
@@ -399,25 +430,35 @@ class _$ScheduleChangeCopyWithImpl<$Res, $Val extends ScheduleChange> implements
 }
 
 /// @nodoc
-abstract class _$$ScheduleChangeImplCopyWith<$Res> implements $ScheduleChangeCopyWith<$Res> {
-  factory _$$ScheduleChangeImplCopyWith(_$ScheduleChangeImpl value, $Res Function(_$ScheduleChangeImpl) then) =
-      __$$ScheduleChangeImplCopyWithImpl<$Res>;
+abstract class _$$ScheduleChangeImplCopyWith<$Res>
+    implements $ScheduleChangeCopyWith<$Res> {
+  factory _$$ScheduleChangeImplCopyWith(
+    _$ScheduleChangeImpl value,
+    $Res Function(_$ScheduleChangeImpl) then,
+  ) = __$$ScheduleChangeImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({ChangeType type, String subject, List<FieldDiff> fieldDiffs});
 }
 
 /// @nodoc
-class __$$ScheduleChangeImplCopyWithImpl<$Res> extends _$ScheduleChangeCopyWithImpl<$Res, _$ScheduleChangeImpl>
+class __$$ScheduleChangeImplCopyWithImpl<$Res>
+    extends _$ScheduleChangeCopyWithImpl<$Res, _$ScheduleChangeImpl>
     implements _$$ScheduleChangeImplCopyWith<$Res> {
-  __$$ScheduleChangeImplCopyWithImpl(_$ScheduleChangeImpl _value, $Res Function(_$ScheduleChangeImpl) _then)
-    : super(_value, _then);
+  __$$ScheduleChangeImplCopyWithImpl(
+    _$ScheduleChangeImpl _value,
+    $Res Function(_$ScheduleChangeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ScheduleChange
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? type = null, Object? subject = null, Object? fieldDiffs = null}) {
+  $Res call({
+    Object? type = null,
+    Object? subject = null,
+    Object? fieldDiffs = null,
+  }) {
     return _then(
       _$ScheduleChangeImpl(
         type:
@@ -442,9 +483,14 @@ class __$$ScheduleChangeImplCopyWithImpl<$Res> extends _$ScheduleChangeCopyWithI
 
 /// @nodoc
 
-class _$ScheduleChangeImpl with DiagnosticableTreeMixin implements _ScheduleChange {
-  const _$ScheduleChangeImpl({required this.type, required this.subject, required final List<FieldDiff> fieldDiffs})
-    : _fieldDiffs = fieldDiffs;
+class _$ScheduleChangeImpl
+    with DiagnosticableTreeMixin
+    implements _ScheduleChange {
+  const _$ScheduleChangeImpl({
+    required this.type,
+    required this.subject,
+    required final List<FieldDiff> fieldDiffs,
+  }) : _fieldDiffs = fieldDiffs;
 
   /// Тип изменения: добавление, удаление, модификация
   @override
@@ -489,11 +535,19 @@ class _$ScheduleChangeImpl with DiagnosticableTreeMixin implements _ScheduleChan
             other is _$ScheduleChangeImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.subject, subject) || other.subject == subject) &&
-            const DeepCollectionEquality().equals(other._fieldDiffs, _fieldDiffs));
+            const DeepCollectionEquality().equals(
+              other._fieldDiffs,
+              _fieldDiffs,
+            ));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, type, subject, const DeepCollectionEquality().hash(_fieldDiffs));
+  int get hashCode => Object.hash(
+    runtimeType,
+    type,
+    subject,
+    const DeepCollectionEquality().hash(_fieldDiffs),
+  );
 
   /// Create a copy of ScheduleChange
   /// with the given fields replaced by the non-null parameter values.
@@ -501,7 +555,10 @@ class _$ScheduleChangeImpl with DiagnosticableTreeMixin implements _ScheduleChan
   @override
   @pragma('vm:prefer-inline')
   _$$ScheduleChangeImplCopyWith<_$ScheduleChangeImpl> get copyWith =>
-      __$$ScheduleChangeImplCopyWithImpl<_$ScheduleChangeImpl>(this, _$identity);
+      __$$ScheduleChangeImplCopyWithImpl<_$ScheduleChangeImpl>(
+        this,
+        _$identity,
+      );
 }
 
 abstract class _ScheduleChange implements ScheduleChange {
@@ -528,7 +585,8 @@ abstract class _ScheduleChange implements ScheduleChange {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ScheduleChangeImplCopyWith<_$ScheduleChangeImpl> get copyWith => throw _privateConstructorUsedError;
+  _$$ScheduleChangeImplCopyWith<_$ScheduleChangeImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -539,19 +597,23 @@ mixin _$ScheduleDiff {
   /// Create a copy of ScheduleDiff
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $ScheduleDiffCopyWith<ScheduleDiff> get copyWith => throw _privateConstructorUsedError;
+  $ScheduleDiffCopyWith<ScheduleDiff> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ScheduleDiffCopyWith<$Res> {
-  factory $ScheduleDiffCopyWith(ScheduleDiff value, $Res Function(ScheduleDiff) then) =
-      _$ScheduleDiffCopyWithImpl<$Res, ScheduleDiff>;
+  factory $ScheduleDiffCopyWith(
+    ScheduleDiff value,
+    $Res Function(ScheduleDiff) then,
+  ) = _$ScheduleDiffCopyWithImpl<$Res, ScheduleDiff>;
   @useResult
   $Res call({Set<ScheduleChange> changes});
 }
 
 /// @nodoc
-class _$ScheduleDiffCopyWithImpl<$Res, $Val extends ScheduleDiff> implements $ScheduleDiffCopyWith<$Res> {
+class _$ScheduleDiffCopyWithImpl<$Res, $Val extends ScheduleDiff>
+    implements $ScheduleDiffCopyWith<$Res> {
   _$ScheduleDiffCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -578,19 +640,25 @@ class _$ScheduleDiffCopyWithImpl<$Res, $Val extends ScheduleDiff> implements $Sc
 }
 
 /// @nodoc
-abstract class _$$ScheduleDiffImplCopyWith<$Res> implements $ScheduleDiffCopyWith<$Res> {
-  factory _$$ScheduleDiffImplCopyWith(_$ScheduleDiffImpl value, $Res Function(_$ScheduleDiffImpl) then) =
-      __$$ScheduleDiffImplCopyWithImpl<$Res>;
+abstract class _$$ScheduleDiffImplCopyWith<$Res>
+    implements $ScheduleDiffCopyWith<$Res> {
+  factory _$$ScheduleDiffImplCopyWith(
+    _$ScheduleDiffImpl value,
+    $Res Function(_$ScheduleDiffImpl) then,
+  ) = __$$ScheduleDiffImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Set<ScheduleChange> changes});
 }
 
 /// @nodoc
-class __$$ScheduleDiffImplCopyWithImpl<$Res> extends _$ScheduleDiffCopyWithImpl<$Res, _$ScheduleDiffImpl>
+class __$$ScheduleDiffImplCopyWithImpl<$Res>
+    extends _$ScheduleDiffCopyWithImpl<$Res, _$ScheduleDiffImpl>
     implements _$$ScheduleDiffImplCopyWith<$Res> {
-  __$$ScheduleDiffImplCopyWithImpl(_$ScheduleDiffImpl _value, $Res Function(_$ScheduleDiffImpl) _then)
-    : super(_value, _then);
+  __$$ScheduleDiffImplCopyWithImpl(
+    _$ScheduleDiffImpl _value,
+    $Res Function(_$ScheduleDiffImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ScheduleDiff
   /// with the given fields replaced by the non-null parameter values.
@@ -612,7 +680,8 @@ class __$$ScheduleDiffImplCopyWithImpl<$Res> extends _$ScheduleDiffCopyWithImpl<
 /// @nodoc
 
 class _$ScheduleDiffImpl with DiagnosticableTreeMixin implements _ScheduleDiff {
-  const _$ScheduleDiffImpl({required final Set<ScheduleChange> changes}) : _changes = changes;
+  const _$ScheduleDiffImpl({required final Set<ScheduleChange> changes})
+    : _changes = changes;
 
   /// Множество изменений в расписании (можно преобразовать в список для удобства отображения)
   final Set<ScheduleChange> _changes;
@@ -647,7 +716,8 @@ class _$ScheduleDiffImpl with DiagnosticableTreeMixin implements _ScheduleDiff {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_changes));
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_changes));
 
   /// Create a copy of ScheduleDiff
   /// with the given fields replaced by the non-null parameter values.
@@ -659,7 +729,8 @@ class _$ScheduleDiffImpl with DiagnosticableTreeMixin implements _ScheduleDiff {
 }
 
 abstract class _ScheduleDiff implements ScheduleDiff {
-  const factory _ScheduleDiff({required final Set<ScheduleChange> changes}) = _$ScheduleDiffImpl;
+  const factory _ScheduleDiff({required final Set<ScheduleChange> changes}) =
+      _$ScheduleDiffImpl;
 
   /// Множество изменений в расписании (можно преобразовать в список для удобства отображения)
   @override
@@ -669,7 +740,8 @@ abstract class _ScheduleDiff implements ScheduleDiff {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ScheduleDiffImplCopyWith<_$ScheduleDiffImpl> get copyWith => throw _privateConstructorUsedError;
+  _$$ScheduleDiffImplCopyWith<_$ScheduleDiffImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 ScheduleState _$ScheduleStateFromJson(Map<String, dynamic> json) {
@@ -680,20 +752,26 @@ ScheduleState _$ScheduleStateFromJson(Map<String, dynamic> json) {
 mixin _$ScheduleState {
   @JsonKey(includeFromJson: false, includeToJson: false)
   ScheduleStatus get status => throw _privateConstructorUsedError;
-  List<(String, Classroom, List<SchedulePart>)> get classroomsSchedule => throw _privateConstructorUsedError;
-  List<(String, Teacher, List<SchedulePart>)> get teachersSchedule => throw _privateConstructorUsedError;
-  List<(String, Group, List<SchedulePart>)> get groupsSchedule => throw _privateConstructorUsedError;
+  List<(String, Classroom, List<SchedulePart>)> get classroomsSchedule =>
+      throw _privateConstructorUsedError;
+  List<(String, Teacher, List<SchedulePart>)> get teachersSchedule =>
+      throw _privateConstructorUsedError;
+  List<(String, Group, List<SchedulePart>)> get groupsSchedule =>
+      throw _privateConstructorUsedError;
   bool get isMiniature => throw _privateConstructorUsedError;
   List<LessonComment> get comments => throw _privateConstructorUsedError;
-  List<LessonReactionSummary> get reactionSummaries => throw _privateConstructorUsedError;
+  List<LessonReactionSummary> get reactionSummaries =>
+      throw _privateConstructorUsedError;
   bool get showEmptyLessons => throw _privateConstructorUsedError;
   bool get showCommentsIndicators => throw _privateConstructorUsedError;
   bool get isListModeEnabled => throw _privateConstructorUsedError;
-  List<ScheduleComment> get scheduleComments => throw _privateConstructorUsedError;
+  List<ScheduleComment> get scheduleComments =>
+      throw _privateConstructorUsedError;
   @SelectedScheduleConverter()
   SelectedSchedule? get selectedSchedule => throw _privateConstructorUsedError;
   @JsonKey(includeFromJson: false, includeToJson: false)
-  Set<SelectedSchedule> get comparisonSchedules => throw _privateConstructorUsedError;
+  Set<SelectedSchedule> get comparisonSchedules =>
+      throw _privateConstructorUsedError;
   @JsonKey(includeFromJson: false, includeToJson: false)
   bool get isComparisonModeEnabled => throw _privateConstructorUsedError;
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -704,7 +782,8 @@ mixin _$ScheduleState {
   bool get isSplitViewEnabled => throw _privateConstructorUsedError;
   @JsonKey(includeFromJson: false, includeToJson: false)
   bool get showAnalytics => throw _privateConstructorUsedError; // Custom schedules
-  List<CustomSchedule> get customSchedules => throw _privateConstructorUsedError;
+  List<CustomSchedule> get customSchedules =>
+      throw _privateConstructorUsedError;
   @JsonKey(includeFromJson: false, includeToJson: false)
   bool get isCustomScheduleModeEnabled => throw _privateConstructorUsedError;
 
@@ -714,16 +793,20 @@ mixin _$ScheduleState {
   /// Create a copy of ScheduleState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $ScheduleStateCopyWith<ScheduleState> get copyWith => throw _privateConstructorUsedError;
+  $ScheduleStateCopyWith<ScheduleState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ScheduleStateCopyWith<$Res> {
-  factory $ScheduleStateCopyWith(ScheduleState value, $Res Function(ScheduleState) then) =
-      _$ScheduleStateCopyWithImpl<$Res, ScheduleState>;
+  factory $ScheduleStateCopyWith(
+    ScheduleState value,
+    $Res Function(ScheduleState) then,
+  ) = _$ScheduleStateCopyWithImpl<$Res, ScheduleState>;
   @useResult
   $Res call({
-    @JsonKey(includeFromJson: false, includeToJson: false) ScheduleStatus status,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    ScheduleStatus status,
     List<(String, Classroom, List<SchedulePart>)> classroomsSchedule,
     List<(String, Teacher, List<SchedulePart>)> teachersSchedule,
     List<(String, Group, List<SchedulePart>)> groupsSchedule,
@@ -735,21 +818,28 @@ abstract class $ScheduleStateCopyWith<$Res> {
     bool isListModeEnabled,
     List<ScheduleComment> scheduleComments,
     @SelectedScheduleConverter() SelectedSchedule? selectedSchedule,
-    @JsonKey(includeFromJson: false, includeToJson: false) Set<SelectedSchedule> comparisonSchedules,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool isComparisonModeEnabled,
-    @JsonKey(includeFromJson: false, includeToJson: false) ScheduleDiff? latestDiff,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool showScheduleDiffDialog,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool isSplitViewEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    Set<SelectedSchedule> comparisonSchedules,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool isComparisonModeEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    ScheduleDiff? latestDiff,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool showScheduleDiffDialog,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool isSplitViewEnabled,
     @JsonKey(includeFromJson: false, includeToJson: false) bool showAnalytics,
     List<CustomSchedule> customSchedules,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool isCustomScheduleModeEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool isCustomScheduleModeEnabled,
   });
 
   $ScheduleDiffCopyWith<$Res>? get latestDiff;
 }
 
 /// @nodoc
-class _$ScheduleStateCopyWithImpl<$Res, $Val extends ScheduleState> implements $ScheduleStateCopyWith<$Res> {
+class _$ScheduleStateCopyWithImpl<$Res, $Val extends ScheduleState>
+    implements $ScheduleStateCopyWith<$Res> {
   _$ScheduleStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -906,13 +996,17 @@ class _$ScheduleStateCopyWithImpl<$Res, $Val extends ScheduleState> implements $
 }
 
 /// @nodoc
-abstract class _$$ScheduleStateImplCopyWith<$Res> implements $ScheduleStateCopyWith<$Res> {
-  factory _$$ScheduleStateImplCopyWith(_$ScheduleStateImpl value, $Res Function(_$ScheduleStateImpl) then) =
-      __$$ScheduleStateImplCopyWithImpl<$Res>;
+abstract class _$$ScheduleStateImplCopyWith<$Res>
+    implements $ScheduleStateCopyWith<$Res> {
+  factory _$$ScheduleStateImplCopyWith(
+    _$ScheduleStateImpl value,
+    $Res Function(_$ScheduleStateImpl) then,
+  ) = __$$ScheduleStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({
-    @JsonKey(includeFromJson: false, includeToJson: false) ScheduleStatus status,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    ScheduleStatus status,
     List<(String, Classroom, List<SchedulePart>)> classroomsSchedule,
     List<(String, Teacher, List<SchedulePart>)> teachersSchedule,
     List<(String, Group, List<SchedulePart>)> groupsSchedule,
@@ -924,14 +1018,20 @@ abstract class _$$ScheduleStateImplCopyWith<$Res> implements $ScheduleStateCopyW
     bool isListModeEnabled,
     List<ScheduleComment> scheduleComments,
     @SelectedScheduleConverter() SelectedSchedule? selectedSchedule,
-    @JsonKey(includeFromJson: false, includeToJson: false) Set<SelectedSchedule> comparisonSchedules,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool isComparisonModeEnabled,
-    @JsonKey(includeFromJson: false, includeToJson: false) ScheduleDiff? latestDiff,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool showScheduleDiffDialog,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool isSplitViewEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    Set<SelectedSchedule> comparisonSchedules,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool isComparisonModeEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    ScheduleDiff? latestDiff,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool showScheduleDiffDialog,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool isSplitViewEnabled,
     @JsonKey(includeFromJson: false, includeToJson: false) bool showAnalytics,
     List<CustomSchedule> customSchedules,
-    @JsonKey(includeFromJson: false, includeToJson: false) bool isCustomScheduleModeEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    bool isCustomScheduleModeEnabled,
   });
 
   @override
@@ -939,10 +1039,13 @@ abstract class _$$ScheduleStateImplCopyWith<$Res> implements $ScheduleStateCopyW
 }
 
 /// @nodoc
-class __$$ScheduleStateImplCopyWithImpl<$Res> extends _$ScheduleStateCopyWithImpl<$Res, _$ScheduleStateImpl>
+class __$$ScheduleStateImplCopyWithImpl<$Res>
+    extends _$ScheduleStateCopyWithImpl<$Res, _$ScheduleStateImpl>
     implements _$$ScheduleStateImplCopyWith<$Res> {
-  __$$ScheduleStateImplCopyWithImpl(_$ScheduleStateImpl _value, $Res Function(_$ScheduleStateImpl) _then)
-    : super(_value, _then);
+  __$$ScheduleStateImplCopyWithImpl(
+    _$ScheduleStateImpl _value,
+    $Res Function(_$ScheduleStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ScheduleState
   /// with the given fields replaced by the non-null parameter values.
@@ -1081,9 +1184,12 @@ class __$$ScheduleStateImplCopyWithImpl<$Res> extends _$ScheduleStateCopyWithImp
 @JsonSerializable()
 class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
   const _$ScheduleStateImpl({
-    @JsonKey(includeFromJson: false, includeToJson: false) this.status = ScheduleStatus.initial,
-    final List<(String, Classroom, List<SchedulePart>)> classroomsSchedule = const [],
-    final List<(String, Teacher, List<SchedulePart>)> teachersSchedule = const [],
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.status = ScheduleStatus.initial,
+    final List<(String, Classroom, List<SchedulePart>)> classroomsSchedule =
+        const [],
+    final List<(String, Teacher, List<SchedulePart>)> teachersSchedule =
+        const [],
     final List<(String, Group, List<SchedulePart>)> groupsSchedule = const [],
     this.isMiniature = false,
     final List<LessonComment> comments = const [],
@@ -1093,14 +1199,21 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
     this.isListModeEnabled = false,
     final List<ScheduleComment> scheduleComments = const [],
     @SelectedScheduleConverter() this.selectedSchedule,
-    @JsonKey(includeFromJson: false, includeToJson: false) final Set<SelectedSchedule> comparisonSchedules = const {},
-    @JsonKey(includeFromJson: false, includeToJson: false) this.isComparisonModeEnabled = false,
-    @JsonKey(includeFromJson: false, includeToJson: false) this.latestDiff = null,
-    @JsonKey(includeFromJson: false, includeToJson: false) this.showScheduleDiffDialog = false,
-    @JsonKey(includeFromJson: false, includeToJson: false) this.isSplitViewEnabled = false,
-    @JsonKey(includeFromJson: false, includeToJson: false) this.showAnalytics = true,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final Set<SelectedSchedule> comparisonSchedules = const {},
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.isComparisonModeEnabled = false,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.latestDiff = null,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.showScheduleDiffDialog = false,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.isSplitViewEnabled = false,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.showAnalytics = true,
     final List<CustomSchedule> customSchedules = const [],
-    @JsonKey(includeFromJson: false, includeToJson: false) this.isCustomScheduleModeEnabled = false,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    this.isCustomScheduleModeEnabled = false,
   }) : _classroomsSchedule = classroomsSchedule,
        _teachersSchedule = teachersSchedule,
        _groupsSchedule = groupsSchedule,
@@ -1111,7 +1224,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
        _customSchedules = customSchedules,
        super._();
 
-  factory _$ScheduleStateImpl.fromJson(Map<String, dynamic> json) => _$$ScheduleStateImplFromJson(json);
+  factory _$ScheduleStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ScheduleStateImplFromJson(json);
 
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -1120,7 +1234,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
   @override
   @JsonKey()
   List<(String, Classroom, List<SchedulePart>)> get classroomsSchedule {
-    if (_classroomsSchedule is EqualUnmodifiableListView) return _classroomsSchedule;
+    if (_classroomsSchedule is EqualUnmodifiableListView)
+      return _classroomsSchedule;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_classroomsSchedule);
   }
@@ -1129,7 +1244,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
   @override
   @JsonKey()
   List<(String, Teacher, List<SchedulePart>)> get teachersSchedule {
-    if (_teachersSchedule is EqualUnmodifiableListView) return _teachersSchedule;
+    if (_teachersSchedule is EqualUnmodifiableListView)
+      return _teachersSchedule;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_teachersSchedule);
   }
@@ -1159,7 +1275,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
   @override
   @JsonKey()
   List<LessonReactionSummary> get reactionSummaries {
-    if (_reactionSummaries is EqualUnmodifiableListView) return _reactionSummaries;
+    if (_reactionSummaries is EqualUnmodifiableListView)
+      return _reactionSummaries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_reactionSummaries);
   }
@@ -1177,7 +1294,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
   @override
   @JsonKey()
   List<ScheduleComment> get scheduleComments {
-    if (_scheduleComments is EqualUnmodifiableListView) return _scheduleComments;
+    if (_scheduleComments is EqualUnmodifiableListView)
+      return _scheduleComments;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_scheduleComments);
   }
@@ -1189,7 +1307,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   Set<SelectedSchedule> get comparisonSchedules {
-    if (_comparisonSchedules is EqualUnmodifiableSetView) return _comparisonSchedules;
+    if (_comparisonSchedules is EqualUnmodifiableSetView)
+      return _comparisonSchedules;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableSetView(_comparisonSchedules);
   }
@@ -1243,18 +1362,29 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
       ..add(DiagnosticsProperty('comments', comments))
       ..add(DiagnosticsProperty('reactionSummaries', reactionSummaries))
       ..add(DiagnosticsProperty('showEmptyLessons', showEmptyLessons))
-      ..add(DiagnosticsProperty('showCommentsIndicators', showCommentsIndicators))
+      ..add(
+        DiagnosticsProperty('showCommentsIndicators', showCommentsIndicators),
+      )
       ..add(DiagnosticsProperty('isListModeEnabled', isListModeEnabled))
       ..add(DiagnosticsProperty('scheduleComments', scheduleComments))
       ..add(DiagnosticsProperty('selectedSchedule', selectedSchedule))
       ..add(DiagnosticsProperty('comparisonSchedules', comparisonSchedules))
-      ..add(DiagnosticsProperty('isComparisonModeEnabled', isComparisonModeEnabled))
+      ..add(
+        DiagnosticsProperty('isComparisonModeEnabled', isComparisonModeEnabled),
+      )
       ..add(DiagnosticsProperty('latestDiff', latestDiff))
-      ..add(DiagnosticsProperty('showScheduleDiffDialog', showScheduleDiffDialog))
+      ..add(
+        DiagnosticsProperty('showScheduleDiffDialog', showScheduleDiffDialog),
+      )
       ..add(DiagnosticsProperty('isSplitViewEnabled', isSplitViewEnabled))
       ..add(DiagnosticsProperty('showAnalytics', showAnalytics))
       ..add(DiagnosticsProperty('customSchedules', customSchedules))
-      ..add(DiagnosticsProperty('isCustomScheduleModeEnabled', isCustomScheduleModeEnabled));
+      ..add(
+        DiagnosticsProperty(
+          'isCustomScheduleModeEnabled',
+          isCustomScheduleModeEnabled,
+        ),
+      );
   }
 
   @override
@@ -1263,30 +1393,64 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
         (other.runtimeType == runtimeType &&
             other is _$ScheduleStateImpl &&
             (identical(other.status, status) || other.status == status) &&
-            const DeepCollectionEquality().equals(other._classroomsSchedule, _classroomsSchedule) &&
-            const DeepCollectionEquality().equals(other._teachersSchedule, _teachersSchedule) &&
-            const DeepCollectionEquality().equals(other._groupsSchedule, _groupsSchedule) &&
-            (identical(other.isMiniature, isMiniature) || other.isMiniature == isMiniature) &&
+            const DeepCollectionEquality().equals(
+              other._classroomsSchedule,
+              _classroomsSchedule,
+            ) &&
+            const DeepCollectionEquality().equals(
+              other._teachersSchedule,
+              _teachersSchedule,
+            ) &&
+            const DeepCollectionEquality().equals(
+              other._groupsSchedule,
+              _groupsSchedule,
+            ) &&
+            (identical(other.isMiniature, isMiniature) ||
+                other.isMiniature == isMiniature) &&
             const DeepCollectionEquality().equals(other._comments, _comments) &&
-            const DeepCollectionEquality().equals(other._reactionSummaries, _reactionSummaries) &&
-            (identical(other.showEmptyLessons, showEmptyLessons) || other.showEmptyLessons == showEmptyLessons) &&
+            const DeepCollectionEquality().equals(
+              other._reactionSummaries,
+              _reactionSummaries,
+            ) &&
+            (identical(other.showEmptyLessons, showEmptyLessons) ||
+                other.showEmptyLessons == showEmptyLessons) &&
             (identical(other.showCommentsIndicators, showCommentsIndicators) ||
                 other.showCommentsIndicators == showCommentsIndicators) &&
-            (identical(other.isListModeEnabled, isListModeEnabled) || other.isListModeEnabled == isListModeEnabled) &&
-            const DeepCollectionEquality().equals(other._scheduleComments, _scheduleComments) &&
-            (identical(other.selectedSchedule, selectedSchedule) || other.selectedSchedule == selectedSchedule) &&
-            const DeepCollectionEquality().equals(other._comparisonSchedules, _comparisonSchedules) &&
-            (identical(other.isComparisonModeEnabled, isComparisonModeEnabled) ||
+            (identical(other.isListModeEnabled, isListModeEnabled) ||
+                other.isListModeEnabled == isListModeEnabled) &&
+            const DeepCollectionEquality().equals(
+              other._scheduleComments,
+              _scheduleComments,
+            ) &&
+            (identical(other.selectedSchedule, selectedSchedule) ||
+                other.selectedSchedule == selectedSchedule) &&
+            const DeepCollectionEquality().equals(
+              other._comparisonSchedules,
+              _comparisonSchedules,
+            ) &&
+            (identical(
+                  other.isComparisonModeEnabled,
+                  isComparisonModeEnabled,
+                ) ||
                 other.isComparisonModeEnabled == isComparisonModeEnabled) &&
-            (identical(other.latestDiff, latestDiff) || other.latestDiff == latestDiff) &&
+            (identical(other.latestDiff, latestDiff) ||
+                other.latestDiff == latestDiff) &&
             (identical(other.showScheduleDiffDialog, showScheduleDiffDialog) ||
                 other.showScheduleDiffDialog == showScheduleDiffDialog) &&
             (identical(other.isSplitViewEnabled, isSplitViewEnabled) ||
                 other.isSplitViewEnabled == isSplitViewEnabled) &&
-            (identical(other.showAnalytics, showAnalytics) || other.showAnalytics == showAnalytics) &&
-            const DeepCollectionEquality().equals(other._customSchedules, _customSchedules) &&
-            (identical(other.isCustomScheduleModeEnabled, isCustomScheduleModeEnabled) ||
-                other.isCustomScheduleModeEnabled == isCustomScheduleModeEnabled));
+            (identical(other.showAnalytics, showAnalytics) ||
+                other.showAnalytics == showAnalytics) &&
+            const DeepCollectionEquality().equals(
+              other._customSchedules,
+              _customSchedules,
+            ) &&
+            (identical(
+                  other.isCustomScheduleModeEnabled,
+                  isCustomScheduleModeEnabled,
+                ) ||
+                other.isCustomScheduleModeEnabled ==
+                    isCustomScheduleModeEnabled));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -1331,7 +1495,8 @@ class _$ScheduleStateImpl extends _ScheduleState with DiagnosticableTreeMixin {
 
 abstract class _ScheduleState extends ScheduleState {
   const factory _ScheduleState({
-    @JsonKey(includeFromJson: false, includeToJson: false) final ScheduleStatus status,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final ScheduleStatus status,
     final List<(String, Classroom, List<SchedulePart>)> classroomsSchedule,
     final List<(String, Teacher, List<SchedulePart>)> teachersSchedule,
     final List<(String, Group, List<SchedulePart>)> groupsSchedule,
@@ -1343,18 +1508,26 @@ abstract class _ScheduleState extends ScheduleState {
     final bool isListModeEnabled,
     final List<ScheduleComment> scheduleComments,
     @SelectedScheduleConverter() final SelectedSchedule? selectedSchedule,
-    @JsonKey(includeFromJson: false, includeToJson: false) final Set<SelectedSchedule> comparisonSchedules,
-    @JsonKey(includeFromJson: false, includeToJson: false) final bool isComparisonModeEnabled,
-    @JsonKey(includeFromJson: false, includeToJson: false) final ScheduleDiff? latestDiff,
-    @JsonKey(includeFromJson: false, includeToJson: false) final bool showScheduleDiffDialog,
-    @JsonKey(includeFromJson: false, includeToJson: false) final bool isSplitViewEnabled,
-    @JsonKey(includeFromJson: false, includeToJson: false) final bool showAnalytics,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final Set<SelectedSchedule> comparisonSchedules,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final bool isComparisonModeEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final ScheduleDiff? latestDiff,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final bool showScheduleDiffDialog,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final bool isSplitViewEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final bool showAnalytics,
     final List<CustomSchedule> customSchedules,
-    @JsonKey(includeFromJson: false, includeToJson: false) final bool isCustomScheduleModeEnabled,
+    @JsonKey(includeFromJson: false, includeToJson: false)
+    final bool isCustomScheduleModeEnabled,
   }) = _$ScheduleStateImpl;
   const _ScheduleState._() : super._();
 
-  factory _ScheduleState.fromJson(Map<String, dynamic> json) = _$ScheduleStateImpl.fromJson;
+  factory _ScheduleState.fromJson(Map<String, dynamic> json) =
+      _$ScheduleStateImpl.fromJson;
 
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -1410,5 +1583,6 @@ abstract class _ScheduleState extends ScheduleState {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ScheduleStateImplCopyWith<_$ScheduleStateImpl> get copyWith => throw _privateConstructorUsedError;
+  _$$ScheduleStateImplCopyWith<_$ScheduleStateImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

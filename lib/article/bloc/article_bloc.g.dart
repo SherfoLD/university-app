@@ -26,18 +26,17 @@ ArticleState _$ArticleStateFromJson(Map<String, dynamic> json) => ArticleState(
   showInterstitialAd: json['showInterstitialAd'] as bool? ?? false,
 );
 
-Map<String, dynamic> _$ArticleStateToJson(
-  ArticleState instance,
-) => <String, dynamic>{
-  'status': _$ArticleStatusEnumMap[instance.status]!,
-  'title': instance.title,
-  'content': instance.content.map((e) => e.toJson()).toList(),
-  'contentSeenCount': instance.contentSeenCount,
-  'relatedArticles': instance.relatedArticles.map((e) => e.toJson()).toList(),
-  'uri': instance.uri?.toString(),
-  'hasReachedArticleViewsLimit': instance.hasReachedArticleViewsLimit,
-  'showInterstitialAd': instance.showInterstitialAd,
-};
+Map<String, dynamic> _$ArticleStateToJson(ArticleState instance) =>
+    <String, dynamic>{
+      'status': _$ArticleStatusEnumMap[instance.status]!,
+      'title': instance.title,
+      'content': instance.content,
+      'contentSeenCount': instance.contentSeenCount,
+      'relatedArticles': instance.relatedArticles,
+      'uri': instance.uri?.toString(),
+      'hasReachedArticleViewsLimit': instance.hasReachedArticleViewsLimit,
+      'showInterstitialAd': instance.showInterstitialAd,
+    };
 
 const _$ArticleStatusEnumMap = {
   ArticleStatus.initial: 'initial',

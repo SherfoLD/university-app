@@ -1,21 +1,8 @@
 dependency_overrides:
   intl: ^0.19.0
-  neon_framework:
-    path: packages/neon/packages/neon_framework
-  files_app:
-    path: packages/neon/packages/neon_framework/packages/files_app
-  neon_http_client:
-    path: packages/neon/packages/neon_framework/packages/neon_http_client
-  account_repository:
-    path: packages/neon/packages/neon_framework/packages/account_repository
   timezone: ^0.10.0
-  flutter_sticky_header: ^0.7.0
-  value_layout_builder: ^0.4.0
-  nextcloud:
-    git:
-      url: https://github.com/0niel/neon
-      ref: main
-      path: packages/nextcloud
+  flutter_sticky_header: ^0.8.0
+  value_layout_builder: ^0.5.0
   bloc_concurrency: ^0.3.0
   hydrated_bloc:
     git:

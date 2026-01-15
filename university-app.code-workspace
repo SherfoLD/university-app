@@ -53,8 +53,11 @@
       "**/coverage": true,
       "**/dist": true
     },
-    "dart.flutterSdkPath": null,
-    "dart.analysisExcludedFolders": ["build", ".dart_tool"],
+    "dart.flutterSdkPath": ".fvm/versions/3.32.8",
+    "dart.analysisExcludedFolders": [
+      "build",
+      ".dart_tool"
+    ],
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
       "source.organizeImports": "explicit"
@@ -97,21 +100,33 @@
         "type": "dart",
         "request": "launch",
         "program": "lib/main/bootstrap.dart",
-        "args": ["--flavor", "development", "--dart-define=FLAVOR=development"]
+        "args": [
+          "--flavor",
+          "development",
+          "--dart-define=FLAVOR=development"
+        ]
       },
       {
         "name": "Flutter (Staging)",
         "type": "dart",
         "request": "launch",
         "program": "lib/main/bootstrap.dart",
-        "args": ["--flavor", "staging", "--dart-define=FLAVOR=staging"]
+        "args": [
+          "--flavor",
+          "staging",
+          "--dart-define=FLAVOR=staging"
+        ]
       },
       {
         "name": "Flutter (Production)",
         "type": "dart",
         "request": "launch",
         "program": "lib/main/bootstrap.dart",
-        "args": ["--flavor", "production", "--dart-define=FLAVOR=production"]
+        "args": [
+          "--flavor",
+          "production",
+          "--dart-define=FLAVOR=production"
+        ]
       },
       {
         "name": "Wear OS App",
@@ -129,7 +144,9 @@
         "label": "Flutter: Clean & Get Dependencies",
         "type": "shell",
         "command": "flutter",
-        "args": ["clean"],
+        "args": [
+          "clean"
+        ],
         "group": "build",
         "presentation": {
           "echo": true,
@@ -138,20 +155,27 @@
           "panel": "shared"
         },
         "dependsOrder": "sequence",
-        "dependsOn": ["Flutter: Get Dependencies"]
+        "dependsOn": [
+          "Flutter: Get Dependencies"
+        ]
       },
       {
         "label": "Flutter: Get Dependencies",
         "type": "shell",
         "command": "flutter",
-        "args": ["pub", "get"],
+        "args": [
+          "pub",
+          "get"
+        ],
         "group": "build"
       },
       {
         "label": "Melos: Bootstrap",
         "type": "shell",
         "command": "melos",
-        "args": ["bootstrap"],
+        "args": [
+          "bootstrap"
+        ],
         "group": "build",
         "presentation": {
           "echo": true,
@@ -164,7 +188,9 @@
         "label": "Melos: Clean",
         "type": "shell",
         "command": "melos",
-        "args": ["clean"],
+        "args": [
+          "clean"
+        ],
         "group": "build"
       },
       {
@@ -185,7 +211,9 @@
         "label": "Flutter: Generate L10n",
         "type": "shell",
         "command": "flutter",
-        "args": ["gen-l10n"],
+        "args": [
+          "gen-l10n"
+        ],
         "group": "build"
       }
     ]

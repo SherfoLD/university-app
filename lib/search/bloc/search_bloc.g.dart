@@ -7,12 +7,11 @@ part of 'search_bloc.dart';
 // **************************************************************************
 
 SearchState _$SearchStateFromJson(Map<String, dynamic> json) => SearchState(
-      searchHisoty: (json['searchHisoty'] as List<dynamic>?)
+  searchHisoty:
+      (json['searchHisoty'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
-    );
+);
 
 Map<String, dynamic> _$SearchStateToJson(SearchState instance) =>
-    <String, dynamic>{
-      'searchHisoty': instance.searchHisoty,
-    };
+    <String, dynamic>{'searchHisoty': instance.searchHisoty};

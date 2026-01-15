@@ -8,11 +8,17 @@ part of 'subject.dart';
 
 Subject _$SubjectFromJson(Map<String, dynamic> json) => Subject(
   name: json['name'] as String,
-  dates: (json['dates'] as List<dynamic>).map((e) => DateTime.parse(e as String)).toList(),
+  dates:
+      (json['dates'] as List<dynamic>)
+          .map((e) => DateTime.parse(e as String))
+          .toList(),
   mainScore: (json['mainScore'] as num?)?.toDouble(),
   additionalScore: (json['additionalScore'] as num?)?.toDouble(),
   classScore: (json['classScore'] as num?)?.toDouble(),
-  visitedDays: (json['visitedDays'] as List<dynamic>?)?.map((e) => DateTime.parse(e as String)).toList(),
+  visitedDays:
+      (json['visitedDays'] as List<dynamic>?)
+          ?.map((e) => DateTime.parse(e as String))
+          .toList(),
 );
 
 Map<String, dynamic> _$SubjectToJson(Subject instance) => <String, dynamic>{

@@ -24,7 +24,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:rtu_mirea_app/home/cubit/home_cubit.dart';
 import 'package:rtu_mirea_app/l10n/l10n.dart';
 import 'package:rtu_mirea_app/app/theme/cubit/theme_cubit.dart';
-import 'package:rtu_mirea_app/app/theme/cubit/theme_state.dart';
 
 import 'package:rtu_mirea_app/schedule/bloc/schedule_bloc.dart';
 

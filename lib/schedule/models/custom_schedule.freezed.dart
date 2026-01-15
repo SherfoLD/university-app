@@ -34,13 +34,16 @@ mixin _$CustomSchedule {
   /// Create a copy of CustomSchedule
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $CustomScheduleCopyWith<CustomSchedule> get copyWith => throw _privateConstructorUsedError;
+  $CustomScheduleCopyWith<CustomSchedule> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $CustomScheduleCopyWith<$Res> {
-  factory $CustomScheduleCopyWith(CustomSchedule value, $Res Function(CustomSchedule) then) =
-      _$CustomScheduleCopyWithImpl<$Res, CustomSchedule>;
+  factory $CustomScheduleCopyWith(
+    CustomSchedule value,
+    $Res Function(CustomSchedule) then,
+  ) = _$CustomScheduleCopyWithImpl<$Res, CustomSchedule>;
   @useResult
   $Res call({
     String id,
@@ -53,7 +56,8 @@ abstract class $CustomScheduleCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CustomScheduleCopyWithImpl<$Res, $Val extends CustomSchedule> implements $CustomScheduleCopyWith<$Res> {
+class _$CustomScheduleCopyWithImpl<$Res, $Val extends CustomSchedule>
+    implements $CustomScheduleCopyWith<$Res> {
   _$CustomScheduleCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -112,9 +116,12 @@ class _$CustomScheduleCopyWithImpl<$Res, $Val extends CustomSchedule> implements
 }
 
 /// @nodoc
-abstract class _$$CustomScheduleImplCopyWith<$Res> implements $CustomScheduleCopyWith<$Res> {
-  factory _$$CustomScheduleImplCopyWith(_$CustomScheduleImpl value, $Res Function(_$CustomScheduleImpl) then) =
-      __$$CustomScheduleImplCopyWithImpl<$Res>;
+abstract class _$$CustomScheduleImplCopyWith<$Res>
+    implements $CustomScheduleCopyWith<$Res> {
+  factory _$$CustomScheduleImplCopyWith(
+    _$CustomScheduleImpl value,
+    $Res Function(_$CustomScheduleImpl) then,
+  ) = __$$CustomScheduleImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({
@@ -128,10 +135,13 @@ abstract class _$$CustomScheduleImplCopyWith<$Res> implements $CustomScheduleCop
 }
 
 /// @nodoc
-class __$$CustomScheduleImplCopyWithImpl<$Res> extends _$CustomScheduleCopyWithImpl<$Res, _$CustomScheduleImpl>
+class __$$CustomScheduleImplCopyWithImpl<$Res>
+    extends _$CustomScheduleCopyWithImpl<$Res, _$CustomScheduleImpl>
     implements _$$CustomScheduleImplCopyWith<$Res> {
-  __$$CustomScheduleImplCopyWithImpl(_$CustomScheduleImpl _value, $Res Function(_$CustomScheduleImpl) _then)
-    : super(_value, _then);
+  __$$CustomScheduleImplCopyWithImpl(
+    _$CustomScheduleImpl _value,
+    $Res Function(_$CustomScheduleImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CustomSchedule
   /// with the given fields replaced by the non-null parameter values.
@@ -194,7 +204,8 @@ class _$CustomScheduleImpl implements _CustomSchedule {
     this.updatedAt,
   }) : _lessons = lessons;
 
-  factory _$CustomScheduleImpl.fromJson(Map<String, dynamic> json) => _$$CustomScheduleImplFromJson(json);
+  factory _$CustomScheduleImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CustomScheduleImplFromJson(json);
 
   @override
   final String id;
@@ -228,9 +239,12 @@ class _$CustomScheduleImpl implements _CustomSchedule {
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._lessons, _lessons) &&
-            (identical(other.description, description) || other.description == description) &&
-            (identical(other.createdAt, createdAt) || other.createdAt == createdAt) &&
-            (identical(other.updatedAt, updatedAt) || other.updatedAt == updatedAt));
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -251,7 +265,10 @@ class _$CustomScheduleImpl implements _CustomSchedule {
   @override
   @pragma('vm:prefer-inline')
   _$$CustomScheduleImplCopyWith<_$CustomScheduleImpl> get copyWith =>
-      __$$CustomScheduleImplCopyWithImpl<_$CustomScheduleImpl>(this, _$identity);
+      __$$CustomScheduleImplCopyWithImpl<_$CustomScheduleImpl>(
+        this,
+        _$identity,
+      );
 
   @override
   Map<String, dynamic> toJson() {
@@ -269,7 +286,8 @@ abstract class _CustomSchedule implements CustomSchedule {
     final DateTime? updatedAt,
   }) = _$CustomScheduleImpl;
 
-  factory _CustomSchedule.fromJson(Map<String, dynamic> json) = _$CustomScheduleImpl.fromJson;
+  factory _CustomSchedule.fromJson(Map<String, dynamic> json) =
+      _$CustomScheduleImpl.fromJson;
 
   @override
   String get id;
@@ -288,5 +306,6 @@ abstract class _CustomSchedule implements CustomSchedule {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$CustomScheduleImplCopyWith<_$CustomScheduleImpl> get copyWith => throw _privateConstructorUsedError;
+  _$$CustomScheduleImplCopyWith<_$CustomScheduleImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
